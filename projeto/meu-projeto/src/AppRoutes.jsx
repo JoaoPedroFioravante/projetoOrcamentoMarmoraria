@@ -1,18 +1,19 @@
 import { Route, BrowserRouter, Routes } from "react-router-dom";
-import Home from "./Home";
 import Orcamento from "./Orcamento";
 import GetOrcamento from "./GetOrcamento";
 import NotFound from "./NotFound";
-import Banner from "./Banner";
+import Nav from "./Nav";
 
 export default function AppRoutes() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Nav/>} >
+        <Route path="/" element={<GetOrcamento />} />
         <Route path="/orcamento" element={<Orcamento />} />
-        <Route path="/meus-orcamentos" element={<GetOrcamento />} />
+        </Route>
         <Route path="*" element={<NotFound />} />
+
       </Routes>
     </BrowserRouter>
   );

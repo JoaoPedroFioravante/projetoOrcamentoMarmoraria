@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navPrincipal{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.LinkNavEstilo{
+    font-style: none;
+    text-decoration: none;
+    color: #F8F7F4;
+}
+
+.LocalizacaoAtual{
+    text-decoration: underline;
+    transition: transform 0.2s ease-out;
+}
+
+.LocalizacaoAtual:hover{
+    transform: scale(1.2);
+} 
+
+.banner-nav{
+    height: 200px;
+    width: 100vw;
+    background-color: #1A1A1A;
+    
+}
+
+@media (min-width: 728px) {
+    .banner-nav{
+        height: 250px;
+    }
+}
+@media (min-width: 1024px) {
+    .banner-nav{
+        height: 300px;
+    }
+}
+
+.bannerPrincipal{
+    width: 100%;
+    margin-bottom: 1vh;
+    height: 85%;
+}
+
+.logo{
+    width: 100%;
+    height: 100%;
+}

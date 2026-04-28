@@ -1,5 +1,5 @@
 export default function SobreNos(){
     return (
-        <h1>orcamento</h1>
+        <h1>sobre nos</h1>
     )
 }
